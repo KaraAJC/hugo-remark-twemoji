@@ -1,4 +1,5 @@
 ---
+name: {{.Get "name"}}
 class: split-50 nopadding bkgpos_00
 background-image: url(bkgs/bubble-right.png)
 
@@ -9,3 +10,7 @@ background-image: url(bkgs/bubble-right.png)
 {{ if .Get "title" }}{{ .Get "title" }}{{ end }}
 {{ .Inner }}
 ]]
+
+???
+{{ if .Get "notes" }}{{ .Get "notes" }}{{ end }}
+
